@@ -46,7 +46,9 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_MKBOOTIMG_ARGS += --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_SOURCE := kernel/oppo/msm8939
+BOARD_KERNEL_SEPARATED_DT := true
 TARGET_KERNEL_ARCH := arm64
+TARGET_CUSTOM_DTBTOOL := dtbToolOppo
 TARGET_KERNEL_CONFIG := lineageos_a37f_defconfig
 
 # File System
