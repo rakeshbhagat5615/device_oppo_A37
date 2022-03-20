@@ -161,6 +161,12 @@ TARGET_NO_RPC := true
 USE_DEVICE_SPECIFIC_GPS := true
 SELINUX_IGNORE_NEVERALLOWS := true
 
+# Shim
+TARGET_LD_SHIM_LIBS := \
+    /system/vendor/lib/libmmcamera2_stats_modules.so|libshim_camera.so \
+    /system/vendor/lib/libmmcamera2_stats_algorithm.so|libcamera_shim.so \
+    /system/vendor/lib/hw/camera.vendor.msm8916.so|libshim_camera.so
+
 # SEpolicy
 BOARD_SEPOLICY_DIRS += \
     $(PLATFORM_PATH)/sepolicy_tmp
