@@ -523,6 +523,7 @@ PRODUCT_PACKAGES += \
     accelcal \
     AccCalibration \
     sensord \
+    calmodule.cfg \
     sensors.msm8916
 
 # Permissions
