@@ -399,7 +399,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.a6000
+    android.hardware.light@2.0-service.oppo_msm8916
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
